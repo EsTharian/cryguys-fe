@@ -1,0 +1,17 @@
+.card {
+  @apply flex;
+
+  &__item {
+    @apply rounded-lg bg-cardBg p-4 flex mx-auto filter drop-shadow-lg;
+    @apply dark:bg-cardBg-dark;
+    @apply xl:p-6;
+
+    &.-full {
+      @apply w-full;
+    }
+  }
+
+  &.-mid {
+    @apply min-h-full justify-center items-center;
+  }
+}

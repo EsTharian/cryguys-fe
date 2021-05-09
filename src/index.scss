@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply h-screen;
+}
+
+body {
+  @apply dark:bg-bodyBg-dark dark:text-body-dark;
+}
+
+#root {
+  @apply h-full;
+}

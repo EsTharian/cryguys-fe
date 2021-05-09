@@ -1,0 +1,12 @@
+.input {
+  @apply flex flex-col;
+
+  &__label {
+    @apply mb-1;
+  }
+
+  &__main {
+    @apply px-2.5 py-1.5 rounded;
+    @apply xl:px-4 xl:py-2.5;
+  }
+}

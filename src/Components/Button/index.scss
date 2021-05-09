@@ -1,0 +1,9 @@
+.button {
+  @apply bg-primary-light px-6 py-2.5 rounded text-white;
+  @apply dark:bg-primary-dark;
+
+  &.-transparent {
+    @apply bg-transparent text-black;
+    @apply dark:text-body-dark;
+  }
+}
