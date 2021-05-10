@@ -7,13 +7,14 @@ import {
 import {
   useContext
 } from 'react';
+import Layout from '../../Components/Layout';
 
 export default function List() {
   const [state, dispatch] = useContext(GlobalContext);
 
   return (
-    <div>
+    <Layout>
       {state.userData.name}
-    </div>
+    </Layout>
   );
 }

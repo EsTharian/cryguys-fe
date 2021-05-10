@@ -41,10 +41,14 @@ export default function Auth () {
           history.replace('/list');
         }
       } else {
+        window.localStorage.removeItem('token');
         history.replace('/login');
       }
     })
-      .catch((err) => console.error(err));
+      .catch(() => {
+        window.localStorage.removeItem('token');
+        history.replace('/login');
+      });
   } else {
     history.replace('/login');
   }

@@ -1,0 +1,28 @@
+.sidebar {
+  @apply w-72 max-w-full py-12 absolute xl:relative h-full bg-cardBg dark:bg-cardBg-dark;
+
+  &.-collapsed {
+    @apply xl:w-16 w-0;
+
+    a {
+      @apply p-0 overflow-hidden;
+    }
+  }
+
+  &__toggle {
+    @apply absolute right-px top-0 transform translate-x-full p-3 bg-cardBg dark:bg-cardBg-dark;
+  }
+
+  &__menu {
+    @apply flex flex-col;
+
+    a {
+      @apply px-6 py-4;
+      @apply hover:bg-blue-50 dark:hover:bg-gray-900;
+
+      &.-active {
+        @apply bg-blue-50 dark:bg-gray-900;
+      }
+    }
+  }
+}

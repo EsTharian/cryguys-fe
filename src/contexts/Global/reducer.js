@@ -11,5 +11,5 @@ export const reducer = (state, action) => {
 export const initialState = {
   jwt: null,
   userData: null,
-  theme: 'light'
+  dark: false
 }

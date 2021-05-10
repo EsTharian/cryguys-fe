@@ -1,0 +1,15 @@
+.layout {
+  @apply flex h-full overflow-hidden;
+
+  &__content {
+    @apply flex flex-1 flex-col;
+  }
+
+  &__main {
+    @apply px-6 py-4 flex-1 overflow-y-auto;
+  }
+
+  &__top {
+    @apply h-12 flex justify-end bg-cardBg dark:bg-cardBg-dark;
+  }
+}
